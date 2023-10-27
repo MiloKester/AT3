@@ -1,4 +1,2 @@
 # AT3
-
-Milo Kester
-Vanie Devi
+Astronomical Processing by Milo Kester & Vanie Devi
