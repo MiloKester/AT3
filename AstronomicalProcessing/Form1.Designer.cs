@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ListBoxDisplay = new System.Windows.Forms.ListBox();
             this.textBox_Entry = new System.Windows.Forms.TextBox();
             this.Btn_BinSearch = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             this.textBox_Ave = new System.Windows.Forms.TextBox();
             this.textBox_Mode = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -69,6 +71,7 @@
             this.ListBoxDisplay.Name = "ListBoxDisplay";
             this.ListBoxDisplay.Size = new System.Drawing.Size(146, 316);
             this.ListBoxDisplay.TabIndex = 0;
+            this.toolTip.SetToolTip(this.ListBoxDisplay, "Displays Data ");
             this.ListBoxDisplay.SelectedIndexChanged += new System.EventHandler(this.ListBoxDisplay_SelectedIndexChanged);
             // 
             // textBox_Entry
@@ -77,6 +80,7 @@
             this.textBox_Entry.Name = "textBox_Entry";
             this.textBox_Entry.Size = new System.Drawing.Size(145, 20);
             this.textBox_Entry.TabIndex = 1;
+            this.toolTip.SetToolTip(this.textBox_Entry, "Edit or Search for Values Here");
             // 
             // Btn_BinSearch
             // 
@@ -85,16 +89,19 @@
             this.Btn_BinSearch.Size = new System.Drawing.Size(125, 23);
             this.Btn_BinSearch.TabIndex = 2;
             this.Btn_BinSearch.Text = "Binary Search";
+            this.toolTip.SetToolTip(this.Btn_BinSearch, "Uses Binary Search to Find Specificed Value\r\n\r\nEnter Value to Search for in Input" +
+        "\r\nPress Search");
             this.Btn_BinSearch.UseVisualStyleBackColor = true;
             this.Btn_BinSearch.Click += new System.EventHandler(this.Btn_BinSearch_Click);
             // 
             // Btn_Sort
             // 
-            this.Btn_Sort.Location = new System.Drawing.Point(6, 45);
+            this.Btn_Sort.Location = new System.Drawing.Point(6, 74);
             this.Btn_Sort.Name = "Btn_Sort";
             this.Btn_Sort.Size = new System.Drawing.Size(125, 23);
             this.Btn_Sort.TabIndex = 3;
             this.Btn_Sort.Text = "Sort Data Set";
+            this.toolTip.SetToolTip(this.Btn_Sort, "Sort the Data Numerically From Smallest to Largest");
             this.Btn_Sort.UseVisualStyleBackColor = true;
             this.Btn_Sort.Click += new System.EventHandler(this.Btn_Sort_Click);
             // 
@@ -105,15 +112,18 @@
             this.Btn_InsertData.Size = new System.Drawing.Size(125, 23);
             this.Btn_InsertData.TabIndex = 0;
             this.Btn_InsertData.Text = "Add Data Set";
+            this.toolTip.SetToolTip(this.Btn_InsertData, "Add a New Data Set to Program.\r\nWill Also Clear Maths and Input");
             this.Btn_InsertData.Click += new System.EventHandler(this.Btn_InsertData_Click);
             // 
             // Btn_Edit
             // 
-            this.Btn_Edit.Location = new System.Drawing.Point(6, 74);
+            this.Btn_Edit.Location = new System.Drawing.Point(6, 45);
             this.Btn_Edit.Name = "Btn_Edit";
             this.Btn_Edit.Size = new System.Drawing.Size(125, 23);
             this.Btn_Edit.TabIndex = 6;
             this.Btn_Edit.Text = "Edit Data Point";
+            this.toolTip.SetToolTip(this.Btn_Edit, "Edit Any Value from Data Box \r\n\r\nSelect Value from Data Box\r\nMake Correction in I" +
+        "nput\r\nPress Edit");
             this.Btn_Edit.Click += new System.EventHandler(this.Btn_Edit_Click);
             // 
             // statusStrip1
@@ -124,8 +134,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 424);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(472, 22);
-            this.statusStrip1.TabIndex = 5;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.TabIndex = 20;
             // 
             // toolStripStatusLabel1
             // 
@@ -144,7 +153,8 @@
             this.Btn_ClearData.Name = "Btn_ClearData";
             this.Btn_ClearData.Size = new System.Drawing.Size(125, 23);
             this.Btn_ClearData.TabIndex = 7;
-            this.Btn_ClearData.Text = "Clear Data Set";
+            this.Btn_ClearData.Text = "Reset Program";
+            this.toolTip.SetToolTip(this.Btn_ClearData, "Fully Resets Program (Data Box, Input Box, Maths)");
             this.Btn_ClearData.UseVisualStyleBackColor = true;
             this.Btn_ClearData.Click += new System.EventHandler(this.Btn_ClearData_Click);
             // 
@@ -197,7 +207,10 @@
             this.Btn_MidEx.Size = new System.Drawing.Size(125, 23);
             this.Btn_MidEx.TabIndex = 12;
             this.Btn_MidEx.Text = "Calculate Mid-Extreme";
+            this.toolTip.SetToolTip(this.Btn_MidEx, "Finds Mid-Extreme of the Data \r\n\r\nMid-Extreme is the Sum of the Largest and Small" +
+        "est Values Divided by Two");
             this.Btn_MidEx.UseVisualStyleBackColor = true;
+            this.Btn_MidEx.Click += new System.EventHandler(this.Btn_MidEx_Click);
             // 
             // Btn_Mode
             // 
@@ -206,7 +219,9 @@
             this.Btn_Mode.Size = new System.Drawing.Size(125, 23);
             this.Btn_Mode.TabIndex = 13;
             this.Btn_Mode.Text = "Calculate Mode";
+            this.toolTip.SetToolTip(this.Btn_Mode, "Finds Mode of the Data \r\n\r\nMode is the Most Reocurring Value");
             this.Btn_Mode.UseVisualStyleBackColor = true;
+            this.Btn_Mode.Click += new System.EventHandler(this.Btn_Mode_Click);
             // 
             // Btn_Ave
             // 
@@ -215,7 +230,10 @@
             this.Btn_Ave.Size = new System.Drawing.Size(125, 23);
             this.Btn_Ave.TabIndex = 14;
             this.Btn_Ave.Text = "Calculate Average";
+            this.toolTip.SetToolTip(this.Btn_Ave, "Finds Average of the Data \r\n\r\nAverage is the Sum of All Values Divided by the Num" +
+        "ber of Values");
             this.Btn_Ave.UseVisualStyleBackColor = true;
+            this.Btn_Ave.Click += new System.EventHandler(this.Btn_Ave_Click);
             // 
             // Btn_Range
             // 
@@ -224,7 +242,10 @@
             this.Btn_Range.Size = new System.Drawing.Size(125, 23);
             this.Btn_Range.TabIndex = 15;
             this.Btn_Range.Text = "Calculate Range";
+            this.toolTip.SetToolTip(this.Btn_Range, "Finds Range of the Data \r\n\r\nRange is the Smallest Value Subtracted from the Large" +
+        "st Value\r\n");
             this.Btn_Range.UseVisualStyleBackColor = true;
+            this.Btn_Range.Click += new System.EventHandler(this.Btn_Range_Click);
             // 
             // Btn_SeqSearch
             // 
@@ -233,7 +254,10 @@
             this.Btn_SeqSearch.Size = new System.Drawing.Size(125, 23);
             this.Btn_SeqSearch.TabIndex = 16;
             this.Btn_SeqSearch.Text = "Sequential Search";
+            this.toolTip.SetToolTip(this.Btn_SeqSearch, "Uses Sequential Search to Find Specificed Value\r\n\r\nEnter Value to Search for in I" +
+        "nput\r\nPress Search");
             this.Btn_SeqSearch.UseVisualStyleBackColor = true;
+            this.Btn_SeqSearch.Click += new System.EventHandler(this.Btn_SeqSearch_Click);
             // 
             // textBox_MidEx
             // 
@@ -295,6 +319,13 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Search";
             // 
+            // toolTip
+            // 
+            this.toolTip.AutomaticDelay = 300;
+            this.toolTip.AutoPopDelay = 999999;
+            this.toolTip.InitialDelay = 300;
+            this.toolTip.ReshowDelay = 60;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +340,8 @@
             this.Controls.Add(this.statusStrip1);
             this.Name = "Form1";
             this.Text = "Astronomical Processing";
+            this.toolTip.SetToolTip(this, "Get the Average of the Data set.\r\nAverage is the sum of all values, divided by th" +
+        "e number of values");
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -351,6 +384,7 @@
         private System.Windows.Forms.TextBox textBox_Ave;
         private System.Windows.Forms.TextBox textBox_Mode;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }
 
