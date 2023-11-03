@@ -84,7 +84,6 @@ namespace AstronomicalProcessing
                     astroData[currentSelectedIndex] = Int32.Parse(textBox_Entry.Text);
 
                     // resort and display
-                    bubbleSort();
                     displayArray();
                     statusStrip_Message.Text = "Edit was Successful";
 
