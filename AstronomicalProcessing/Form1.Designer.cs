@@ -84,7 +84,7 @@
             // 
             // Btn_BinSearch
             // 
-            this.Btn_BinSearch.Location = new System.Drawing.Point(6, 19);
+            this.Btn_BinSearch.Location = new System.Drawing.Point(6, 16);
             this.Btn_BinSearch.Name = "Btn_BinSearch";
             this.Btn_BinSearch.Size = new System.Drawing.Size(125, 23);
             this.Btn_BinSearch.TabIndex = 2;
@@ -131,9 +131,9 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.statusStrip_Message});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 424);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 423);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(472, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(478, 22);
             this.statusStrip1.TabIndex = 20;
             // 
             // toolStripStatusLabel1
@@ -249,7 +249,7 @@
             // 
             // Btn_SeqSearch
             // 
-            this.Btn_SeqSearch.Location = new System.Drawing.Point(6, 48);
+            this.Btn_SeqSearch.Location = new System.Drawing.Point(6, 45);
             this.Btn_SeqSearch.Name = "Btn_SeqSearch";
             this.Btn_SeqSearch.Size = new System.Drawing.Size(125, 23);
             this.Btn_SeqSearch.TabIndex = 16;
@@ -330,7 +330,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 446);
+            this.ClientSize = new System.Drawing.Size(478, 445);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.Maths);
             this.Controls.Add(this.groupBox4);
